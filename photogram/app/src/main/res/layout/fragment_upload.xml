@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".Upload">
+
+    <ImageView
+        android:id="@+id/upload_img"
+        android:layout_width="260dp"
+        android:layout_height="360dp"
+        android:src="@drawable/ic_upload"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/upload"/>
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/upload_img"
+        android:text="@string/instruction"
+        />
+
+    <EditText
+        android:id="@+id/img_title"
+        android:layout_margin="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:hint="@string/img_title"
+        android:layout_below="@id/instruction"/>
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_title"
+        android:layout_marginTop="30dp"
+        android:text="@string/upload"
+        android:layout_alignEnd="@id/img_title"/>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="dark mode"
+        android:title="Dark mode" />
+
+    <EditTextPreference
+        android:key="email"
+        android:dialogTitle="Enter your email"
+        android:summary="Enter your email for notifications"
+        android:title="Subscribe to emails"
+        android:inputType="text"/>
+
+</PreferenceScreen>
